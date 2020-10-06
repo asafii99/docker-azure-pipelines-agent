@@ -92,6 +92,7 @@ print_header "3. Configuring Azure Pipelines agent..."
 ./bin/installdependencies.sh
 
 ./config.sh --unattended \
+  --sslcacert omp-cacert.pem \
   --agent "${AZP_AGENT_NAME:-$(hostname)}" \
   --url "$AZP_URL" \
   --auth PAT \
