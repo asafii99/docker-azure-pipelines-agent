@@ -21,7 +21,7 @@ RUN apt-get update \
 
 WORKDIR /azp
 
-COPY omp-cacert.pem
+COPY omp-cacert.pem .
 COPY ./start.sh .
 RUN chmod +x start.sh
 
